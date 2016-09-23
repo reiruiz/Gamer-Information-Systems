@@ -1,0 +1,63 @@
+2016-09-22 13:50:26.853 [main] INFO  a00971562.gis.Gis - 2016-09-22T20:50:26.846Z
+2016-09-22 13:50:26.979 [main] INFO  a00971562.gis.Gis - Reading from C:\Users\Rei\Desktop\A00971562GisA2\players.dat
+2016-09-22 13:50:26.979 [main] INFO  a00971562.gis.Gis - Reading from C:\Users\Rei\Desktop\A00971562GisA2\personas.dat
+2016-09-22 13:50:26.979 [main] INFO  a00971562.gis.Gis - Reading from C:\Users\Rei\Desktop\A00971562GisA2\games.dat
+2016-09-22 13:50:26.979 [main] INFO  a00971562.gis.Gis - Reading from C:\Users\Rei\Desktop\A00971562GisA2\scores.dat
+2016-09-22 13:50:27.055 [main] DEBUG a00971562.gis.data.Database - Loading database properties from db.properties
+2016-09-22 13:50:27.454 [main] INFO  a00971562.gis.data.Database - Driver loaded
+2016-09-22 13:50:31.706 [main] INFO  a00971562.gis.data.Database - Database connected
+2016-09-22 13:50:33.149 [main] INFO  a00971562.gis.dao.PlayerDao - Database Players created
+2016-09-22 13:50:33.151 [main] INFO  a00971562.gis.dao.Dao - Query: CREATE TABLE Players(id INTEGER, firstName VARCHAR(20), lastName VARCHAR(20), emailAddress VARCHAR(40), birthDate VARCHAR(40), gamesPlayed INTEGER, gamesWon INTEGER, PRIMARY KEY (id))
+2016-09-22 13:50:33.423 [main] INFO  a00971562.gis.dao.PlayerDao - INSERT INTO Players VALUES(1, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 7, 5)
+2016-09-22 13:50:33.493 [main] INFO  a00971562.gis.dao.PlayerDao - INSERT INTO Players VALUES(2, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 7, 4)
+2016-09-22 13:50:33.506 [main] INFO  a00971562.gis.dao.PlayerDao - INSERT INTO Players VALUES(3, 'Conrad', 'Washington', 'fredfish@gamer.net', '19720712', 1, 1)
+2016-09-22 13:50:33.551 [main] INFO  a00971562.gis.dao.PlayerDao - INSERT INTO Players VALUES(4, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003', 6, 2)
+2016-09-22 13:50:33.567 [main] INFO  a00971562.gis.dao.PlayerDao - INSERT INTO Players VALUES(5, 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401', 4, 2)
+2016-09-22 13:50:33.641 [main] INFO  a00971562.gis.dao.PersonaDao - Database Personas created
+2016-09-22 13:50:33.641 [main] INFO  a00971562.gis.dao.Dao - Query: CREATE TABLE Personas(id INTEGER, playerId INTEGER, gamerTag VARCHAR(40), platform VARCHAR(2), firstName VARCHAR(20), lastName VARCHAR(20), emailAddress VARCHAR(40), birthDate VARCHAR(40), PRIMARY KEY (id))
+2016-09-22 13:50:33.699 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(1, 1, 'Ithroeann', 'IO', 'Fred', 'Fish', 'fredfish@gamer.net', '19770322')
+2016-09-22 13:50:33.720 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(2, 1, 'Cirronith', 'PS', 'Fred', 'Fish', 'fredfish@gamer.net', '19770322')
+2016-09-22 13:50:33.741 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(3, 1, 'Deathstar', 'IO', 'Fred', 'Fish', 'fredfish@gamer.net', '19770322')
+2016-09-22 13:50:33.753 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(4, 2, 'Mazzzap', 'AN', 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828')
+2016-09-22 13:50:33.764 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(5, 2, 'Redstripe', 'PC', 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828')
+2016-09-22 13:50:33.788 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(6, 3, 'Crayonbreath', 'PS', 'Conrad', 'Washington', 'fredfish@gamer.net', '19720712')
+2016-09-22 13:50:33.802 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(7, 4, 'Quinesia', 'XB', 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003')
+2016-09-22 13:50:33.818 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(8, 4, 'VolcanoBrawler', 'PC', 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003')
+2016-09-22 13:50:33.829 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(9, 5, 'CastleRock', 'XB', 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401')
+2016-09-22 13:50:33.841 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(10, 5, 'TorpedoBear', 'PC', 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401')
+2016-09-22 13:50:33.891 [main] INFO  a00971562.gis.dao.PersonaDao - INSERT INTO Personas VALUES(11, 5, 'GreenPanda', 'AN', 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401')
+2016-09-22 13:50:33.962 [main] INFO  a00971562.gis.dao.GameDao - Database Games created
+2016-09-22 13:50:33.963 [main] INFO  a00971562.gis.dao.Dao - Query: CREATE TABLE Games(id VARCHAR(4), name VARCHAR(40), producer VARCHAR(40), played INTEGER, PRIMARY KEY (id))
+2016-09-22 13:50:34.015 [main] INFO  a00971562.gis.dao.GameDao - INSERT INTO Games VALUES('CODE', 'Colour Demon', 'Magenta Boxer', 0)
+2016-09-22 13:50:34.028 [main] INFO  a00971562.gis.dao.GameDao - INSERT INTO Games VALUES('NUPI', 'Number Picker', 'Random Numburrs', 0)
+2016-09-22 13:50:34.037 [main] INFO  a00971562.gis.dao.GameDao - INSERT INTO Games VALUES('QUFI', 'Quick Fingers', 'Digitology', 0)
+2016-09-22 13:50:34.351 [main] INFO  a00971562.gis.dao.ScoreDao - Database Scores created
+2016-09-22 13:50:34.356 [main] INFO  a00971562.gis.dao.Dao - Query: CREATE TABLE Scores(personaId INTEGER, gameId VARCHAR(4), win VARCHAR(4), winTotal INTEGER, lostTotal INTEGER, firstName VARCHAR(20), lastName VARCHAR(20), emailAddress VARCHAR(40), birthDate VARCHAR(40), playerId INTEGER, gamerTag VARCHAR(40), platform VARCHAR(4), id VARCHAR(4), name VARCHAR(40), producer VARCHAR(40))
+2016-09-22 13:50:34.418 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(1, 'QUFI', 'LOSE', 0, 1, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 1, 'Ithroeann', 'IO', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.431 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(1, 'QUFI', 'WIN', 1, 0, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 1, 'Ithroeann', 'IO', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.441 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(2, 'CODE', 'WIN', 1, 0, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 1, 'Cirronith', 'PS', 'CODE', 'Colour Demon', 'Magenta Boxer')
+2016-09-22 13:50:34.465 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(2, 'CODE', 'WIN', 1, 0, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 1, 'Cirronith', 'PS', 'CODE', 'Colour Demon', 'Magenta Boxer')
+2016-09-22 13:50:34.467 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(3, 'QUFI', 'WIN', 1, 0, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 1, 'Deathstar', 'IO', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.478 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(3, 'QUFI', 'WIN', 1, 0, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 1, 'Deathstar', 'IO', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.480 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(3, 'QUFI', 'LOSE', 0, 1, 'Fred', 'Fish', 'fredfish@gamer.net', '19770322', 1, 'Deathstar', 'IO', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.499 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(4, 'CODE', 'LOSE', 0, 1, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 2, 'Mazzzap', 'AN', 'CODE', 'Colour Demon', 'Magenta Boxer')
+2016-09-22 13:50:34.509 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(4, 'NUPI', 'LOSE', 0, 1, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 2, 'Mazzzap', 'AN', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.518 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(4, 'QUFI', 'WIN', 1, 0, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 2, 'Mazzzap', 'AN', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.528 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(5, 'QUFI', 'WIN', 1, 0, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 2, 'Redstripe', 'PC', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.537 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(5, 'CODE', 'LOSE', 0, 1, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 2, 'Redstripe', 'PC', 'CODE', 'Colour Demon', 'Magenta Boxer')
+2016-09-22 13:50:34.546 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(5, 'NUPI', 'WIN', 1, 0, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 2, 'Redstripe', 'PC', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.555 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(5, 'CODE', 'WIN', 1, 0, 'Laurie', 'Nash', 'laurieeenash@gmail.com', '19820828', 2, 'Redstripe', 'PC', 'CODE', 'Colour Demon', 'Magenta Boxer')
+2016-09-22 13:50:34.564 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(6, 'QUFI', 'WIN', 1, 0, 'Conrad', 'Washington', 'fredfish@gamer.net', '19720712', 3, 'Crayonbreath', 'PS', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.573 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(7, 'CODE', 'WIN', 1, 0, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003', 4, 'Quinesia', 'XB', 'CODE', 'Colour Demon', 'Magenta Boxer')
+2016-09-22 13:50:34.582 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(7, 'NUPI', 'WIN', 1, 0, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003', 4, 'Quinesia', 'XB', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.592 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(8, 'QUFI', 'LOSE', 0, 1, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003', 4, 'VolcanoBrawler', 'PC', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.602 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(8, 'NUPI', 'LOSE', 0, 1, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003', 4, 'VolcanoBrawler', 'PC', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.612 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(8, 'NUPI', 'LOSE', 0, 1, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003', 4, 'VolcanoBrawler', 'PC', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.614 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(8, 'CODE', 'LOSE', 0, 1, 'Jeanette', 'Price', 'priceizrite@hotmail.com', '20011003', 4, 'VolcanoBrawler', 'PC', 'CODE', 'Colour Demon', 'Magenta Boxer')
+2016-09-22 13:50:34.622 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(9, 'QUFI', 'LOSE', 0, 1, 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401', 5, 'CastleRock', 'XB', 'QUFI', 'Quick Fingers', 'Digitology')
+2016-09-22 13:50:34.631 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(10, 'NUPI', 'WIN', 1, 0, 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401', 5, 'TorpedoBear', 'PC', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.639 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(11, 'NUPI', 'WIN', 1, 0, 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401', 5, 'GreenPanda', 'AN', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.646 [main] INFO  a00971562.gis.dao.ScoreDao - INSERT INTO Scores VALUES(11, 'NUPI', 'LOSE', 0, 1, 'Mark', 'Chan', 'mchan@oneminutemail.com', '19950401', 5, 'GreenPanda', 'AN', 'NUPI', 'Number Picker', 'Random Numburrs')
+2016-09-22 13:50:34.754 [main] INFO  a00971562.gis.Gis - 2016-09-22T20:50:34.754Z
+2016-09-22 13:50:34.755 [main] INFO  a00971562.gis.Gis - Duration: 7908 ms
+
